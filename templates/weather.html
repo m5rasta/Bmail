@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Weather - {{ user.nickname() }}
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <h3 class="naslov">Weather in <span id="from_to">{{ weather.name }}</span> <span id="from_to">{{ weather.sys.country }}</span></h3>
+    </div>
+    <div class="container">
+        <h5 class="naslov">Temperature: &nbsp&nbsp<span id="from_to">{{ weather.main.temp }} Celzius</span> </h5>
+        <h5 class="naslov">Pressure: &nbsp&nbsp<span id="from_to">{{ weather.main.pressure }} hPa</span></h5>
+        <h5 class="naslov">Humidity: &nbsp&nbsp<span id="from_to">{{ weather.main.humidity }} %</span></h5>
+    </div>
+
+
+{% endblock page_content %}

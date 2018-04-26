@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Inbox - {{ user.nickname() }}
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <h3 class="naslov">Inbox</h3>
+    </div>
+    <div class="container">
+        <ul>
+            {% for message in messages %}
+                <li id="from_to"> <span id="from_to">From:</span> <span id="message">{{ message.user }}</span>&nbsp&nbsp
+                &nbsp&nbsp<span id="from_to"><a href="/message/{{ message.key.id() }}"> Message:</span> <span id="message">{{ message.text }}</span></a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock page_content %}

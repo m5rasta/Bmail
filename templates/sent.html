@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sent Message - {{ user.nickname() }}
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <h3 class="naslov">Sent</h3>
+    </div>
+    <div class="container">
+        <ul>
+            {% for message in messages %}
+            <li id="from_to"><span id="from_to">To:</span> <span id="message">{{ message.reciver }}</span>&nbsp&nbsp
+                &nbsp&nbsp<span id="from_to"><a href="/message/{{ message.key.id() }}"> Message:</span> <span id="message">{{ message.text }}</span></a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock page_content %}

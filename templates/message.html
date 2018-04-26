@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Message - {{ user.nickname() }}
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <h3 class="naslov">Message</h3>
+    </div>
+    <div class="container">
+        <span id="from_to">From:</span> <span id="message">{{ message.user }}</span>
+    </div>
+    <div class="container">
+         <span id="from_to">Content:</span> <h5 id="message">{{ message.text }}</h5>
+    </div>
+    <div class="container">
+        <a href="/inbox">Back</a>
+    </div>
+{% endblock page_content %}

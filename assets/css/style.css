@@ -1,0 +1,96 @@
+body {
+    background-image: url("http://irishdancingphysicalfitness.ie/wp-content/uploads/2014/12/Wallpapersxl-Wooden-Floor-Cartoon-Wood-Digital-Art-326817-2560x1600-1-e1473452889814.jpg");
+}
+
+#bmail {
+    color: yellow;
+    font-size: 60px;
+}
+
+#welcome {
+    color: #007bff !important;
+}
+
+#user {
+    color: #007bff;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+.breadcrumb {
+    background-color: black !important;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: yellow;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.naslov {
+    padding-left: 16px;
+    color: yellow !important;
+}
+
+#label, #label1 {
+    color: yellow;
+}
+
+.row {
+    padding-left: 31px;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  color: yellow;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#from_to {
+    color: #007bff;
+}
+
+#message {
+    color: yellow;
+}
